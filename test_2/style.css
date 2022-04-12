@@ -1,0 +1,185 @@
+.wrap {
+  position: relative;
+}
+.block-hide{
+  position: absolute;
+  z-index: 10;
+  width: 300px;
+  height: 58px;
+  background: rgb(255,255,255);
+  top: 92px;
+  left: 24px;
+}
+.box{
+  display: block;
+  width: 300px;
+  height: 250px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid rgb(54, 14, 255);
+  margin: 150px 0 0 24px;
+  position: absolute;
+  z-index: 5;
+}
+.ball{
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(54, 14, 255);
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-animation: bounce 3s ease-out;
+	animation: bounce 3s ease-out;
+}
+
+@-webkit-keyframes bounce {
+  0%, 10%, 30%, 50%, 51%, 75%, 85%, 95%, 98%, 100%{
+    left: 50%;
+  }
+  0% {
+   top: -58px;
+    -webkit-transform:translate(-50%, 0);
+            transform:translate(-50%, 0);
+            opacity: 0;
+  }
+  5% {
+    top: 40px;
+    -webkit-transform:translate(-50%, 0);
+            transform:translate(-50%, 0);
+            z-index: 1;
+            opacity: 1;
+  }
+  30% {
+    top: 100%;
+    -webkit-transform:translate(-50%, -100%);
+            transform:translate(-50%, -100%);
+            z-index: 1;
+  }
+  50% {
+    top: 50%;
+    -webkit-transform:translate(-50%, -50%);
+            transform:translate(-50%, -50%);
+            z-index: 1;
+  }
+  51% {
+    top: 50%;
+    -webkit-transform:translate(-50%, -50%);
+            transform:translate(-50%, -50%);
+            z-index: 1;
+  }
+  75% {
+    top: 100%;
+    -webkit-transform:translate(-50%, -100%);
+            transform:translate(-50%, -100%);
+            z-index: 1;
+  }
+  85% {
+    top: 85%;
+    -webkit-transform:translate(-50%, -85%);
+            transform:translate(-50%, -85%);
+            z-index: 1;
+  }
+  95% {
+    top: 100%;
+    -webkit-transform:translate(-50%, -100%);
+            transform:translate(-50%, -100%);
+            z-index: 1;
+  }
+  98% {
+    top: 95%;
+    -webkit-transform:translate(-50%, -95%);
+            transform:translate(-50%, -95%);
+            z-index: 1;
+  }
+  100% {
+    top: 100%;
+    -webkit-transform:translate(-50%, -100%);
+            transform:translate(-50%, -100%);
+            z-index: 1;
+  }
+  }
+@keyframes bounce {
+  0%, 10%, 30%, 50%, 51%, 75%, 85%, 95%, 98%, 100%{
+    left: 50%;
+  }
+  0% {
+    top: -58px;
+    -webkit-transform:translate(-50%, 0);
+            transform:translate(-50%, 0);
+            opacity: 0;
+
+  }
+  5% {
+    top: 40px;
+    -webkit-transform:translate(-50%, 0);
+            transform:translate(-50%, 0);
+            z-index: 1;
+            opacity: 1;
+  }
+  30% {
+    top: 100%;
+    -webkit-transform:translate(-50%, -100%);
+            transform:translate(-50%, -100%);
+            z-index: 1;
+  }
+  50% {
+    top: 50%;
+    -webkit-transform:translate(-50%, -50%);
+            transform:translate(-50%, -50%);
+            z-index: 1;
+  }
+  51% {
+    top: 50%;
+    -webkit-transform:translate(-50%, -50%);
+            transform:translate(-50%, -50%);
+            z-index: 1;
+  }
+  75% {
+    top: 100%;
+    -webkit-transform:translate(-50%, -100%);
+            transform:translate(-50%, -100%);
+            z-index: 1;
+  }
+  85% {
+    top: 85%;
+    -webkit-transform:translate(-50%, -85%);
+            transform:translate(-50%, -85%);
+            z-index: 1;
+  }
+  95% {
+    top: 100%;
+    -webkit-transform:translate(-50%, -100%);
+            transform:translate(-50%, -100%);
+            z-index: 1;
+  }
+  98% {
+    top: 95%;
+    -webkit-transform:translate(-50%, -95%);
+            transform:translate(-50%, -95%);
+            z-index: 1;
+  }
+  100% {
+    top: 100%;
+    -webkit-transform:translate(-50%, -100%);
+            transform:translate(-50%, -100%);
+            z-index: 1;
+  }
+  }
+
+@media screen and (max-width: 800px){
+  .block-hide{
+    left: 0;
+  }
+  .box{
+    margin: 150px 0 0 0;
+  }
+}
